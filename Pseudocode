@@ -1,0 +1,23 @@
+• Pseudo code explaining the program workflow.
+
+1.	Initialize x and y coordinates as 0, dis as 'N' (North), and an empty direction.
+
+2.	moveRight function: When a command is given  to move right, based on the current direction        (dis),               coordinates (x, y) and the direction (dis) are updated.
+
+3.	movLeft function: Similarly, when a command is given to move left, update the coordinates and direction based on the current direction (dis).
+
+4.	findDir function: Determine the current direction string (direction) based on the character representation of the direction (dis).
+
+5.	main Function:
+  a. Ask the user for a command input and input should be in the format such as "RM15". The input format    should be L or R followed by M and M follwed by number other input format is considered invalid.
+  In case of multiple input it shoulde be as "LM10RM10" the format should be same as single input and the direction should not contain any space or other input characters between two or more input directions.
+
+  b. Input is validated against the regular expression defined.
+  
+  c. Iterate through the command:
+     i. For every "RM" command, parse the number following "M" and execute a right movement (movRight).
+     ii. For every "LM" command, parse the number following "M" and execute a left movement (movLeft).
+
+6.	Find the current direction (findDir).
+
+7.	Print the final direction and position (direction, x, y).
